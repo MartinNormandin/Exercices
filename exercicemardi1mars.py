@@ -9,9 +9,9 @@ def dms_en_dd(degre,minute,seconde):
 
     return(degre+conversion_minute+conversion_seconde)
 
-def distance_pole_nord(latitude,longitude):
+def distance_pole_nord(latitude,longitude): #devrait laisser 2 lignes vide avant la definition d'une fonction.
 
-   return math.sqrt(((86 - latitude)**2) + (172 - longitude)**2)*111.16
+   return math.sqrt(((86 - latitude)**2) + (172 - longitude)**2)*111.16 #ne pas laisser d'espace pour l'operateur dans une parenthese
 #formule un peu longue, devrait déclarer plus de variables dans la fonction
 
 #définir que l'on parle de données dms dans le nom des variables
