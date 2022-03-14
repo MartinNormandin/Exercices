@@ -1,9 +1,6 @@
-#Créer une calculatrice d'IMC demandant à l'utilisateur sa grandeur(en mètres), son poids(en kg). Retournez ensuite la catégorie dans laquelle se 
-#trouve la personne.
+#Créer une calculatrice d'IMC demandant à l'utilisateur sa grandeur(en mètres), son poids(en kg). Retournez ensuite la catégorie dans laquelle se trouve la personne.
 
-# nom de la fonction (presentement: poids_taille) ne représente pas ce qu'elle fait
-def poids_taille(): 
-# ne pas avoir de ligne vide inutile entre les lignes de code de la fonction 
+def poids_taille():
 
     poids = int(input("Entrer votre poids en kg: "))
     taille = float(input("Entre votre taille en metres: "))
@@ -30,8 +27,7 @@ def poids_taille():
     return categorie
 
 
-rep = poids_taille()
-print(f"Votre catégorie imc est {rep}")
+print(poids_taille())
     
 
 
