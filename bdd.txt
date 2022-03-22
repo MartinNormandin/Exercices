@@ -1,6 +1,8 @@
-Keven Presseau-st-laurent 
-Concept de programmation 1 
-Emma Senez Parent 
-Logique mathématique 
-Jean-Pierre Fiset 
-Systeme d'exploitation 
+Keven Presseau-st-laurent
+Concept de programmation 1
+Emma Senez Parent
+Logique mathÃ©matique
+Jean-Pierre Fiset
+Systeme d'exploitation
+Martin Normandin
+Poutine

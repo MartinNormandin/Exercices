@@ -31,24 +31,64 @@ def dictionnaire():
 
 def fichier():
 
-    mon_fichier = open("bdd.txt", "w")
+    mon_fichier = open("bdd.txt", "r", encoding="utf8")
+    contenu = mon_fichier.readlines()
+    mon_fichier.close()
+    dico = {contenu[0] : contenu[1], contenu[2] : contenu[3], contenu[4] : contenu[5]}
 
-    mon_fichier.write("Keven Presseau-st-laurent \n")
-    mon_fichier.write("Concept de programmation 1 \n")
-    mon_fichier.write("Emma Senez Parent \n")
-    mon_fichier.write("Logique mathématique \n")
-    mon_fichier.write("Jean-Pierre Fiset \n")
-    mon_fichier.write("Systeme d'exploitation \n")
+    return dico
 
+#dic1 = fichier()
+
+
+#En se basant sur l'exercice 4, modifier le menu utilisateur en y ajoutant une option lui permettant de faire une recherche d'enseignant.
+#Vérifier si l'enseignant entré par l'utilisateur est présent
+#dans votre liste de cours et indiquer le résultat à la console.
+
+def exercice5(dico_entrant):
+     
+    enseignant = (input("Entrer le nom de votre enseignant: "))    
+
+    enseignant1 = enseignant + "\n"
+
+    if enseignant1 in dico_entrant:
+        print("Votre enseignant est dans la liste : ")
+
+    else:
+        print("pas dans la liste")
+
+    return None
+
+#exercice5(dic1)
+
+
+#Offrir à l'utilisateur une nouvelle option au menu lui permettant d'ajouter un cours et un nom d'enseignant
+# à la base de données de l'exercice 4. Une fois les données utilisateurs entrées,
+# ajouter les informations à la fin du document bdd.txt
+
+
+def exercice6():
+
+    ajout_en = input("Ajouter votre enseignant: ")
+    ajout_cours = input("Ajouter le nom du cours ")
+
+    mon_fichier = open("bdd.txt", "a", encoding ="utf8")
+    mon_fichier.write(f"\n{ajout_en}\n{ajout_cours}")
     mon_fichier.close()
 
-    mon_fichier = open("bdd.txt", "r")
-    contenu = mon_fichier.readlines()
+
+exercice6()
+
+
+
     
-    print(f"{contenu[0]}{contenu[1]}{contenu[2]}{contenu[3]}{contenu[4]}{contenu[5]}")
 
 
-fichier()
+        
+  
+
+
+
 
 
     
