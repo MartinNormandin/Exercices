@@ -5,7 +5,7 @@ def Naissance(mois, jour):
     if (mois == 4 or mois == 5) or (mois == 3 and jour >= 21) or (mois == 6 and jour < 21):
         return "printemps"
 
-    elif (mois == 7 or mois == 8) or (mois == 6 and jour >= 21) or (mois == 9 and jour < 21):
+    if (mois == 7 or mois == 8) or (mois == 6 and jour >= 21) or (mois == 9 and jour < 21):
         return "été"
 
     else:
