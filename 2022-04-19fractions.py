@@ -44,12 +44,25 @@ class Fraction:
         return  (self.num*frac2.den) == (self.den*frac2.num)
 
     def __mul__(self, frac2):
-        pass
+        num1 = self.num
+        den1 = self.den
+        num2 = frac2.num
+        den2 = frac2.den
+        frac3 = Fraction(num1*num2, den1*den2)
+        return frac3
+
+    def __truediv__(self, frac2):
+        num1 = self.num
+        den1 = self.den
+        num2 = frac2.num
+        den2 = frac2.den
+        frac3 = Fraction(num1*den2, den1*num2)
+        return frac3
 
 
     
 
 fraction1=Fraction(1, 2)
 fraction2=Fraction(3, 4)
-fraction3 = fraction1+fraction2
+fraction3 = fraction1/fraction2
 print(fraction3)
